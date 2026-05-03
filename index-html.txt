@@ -25,8 +25,9 @@ z-index:1000;
 nav a{color:white;text-decoration:none;font-weight:bold}
 nav a:hover{color:#25D366}
 
-/* HERO */
+/* HERO FULL WIDTH */
 .hero{
+width:100%;
 background:linear-gradient(rgba(11,42,74,0.85),rgba(11,42,74,0.85)),
 url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1600') center/cover;
 color:white;
@@ -48,8 +49,12 @@ cursor:pointer;
 }
 .btn.blue{background:#1e4ea1}
 
-/* SECTION */
-section{padding:80px 20px;max-width:1200px;margin:auto}
+/* SECTIONS */
+.container{
+max-width:1200px;
+margin:auto;
+padding:80px 20px;
+}
 
 /* GRID */
 .grid{
@@ -72,6 +77,9 @@ box-shadow:0 2px 10px rgba(0,0,0,0.05);
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:40px;
+max-width:1200px;
+margin:auto;
+padding:80px 20px;
 }
 @media(max-width:900px){
 .split{grid-template-columns:1fr}
@@ -92,7 +100,6 @@ background:#0b2a4a;
 color:white;
 text-align:center;
 padding:20px;
-margin-top:50px;
 }
 </style>
 
@@ -114,7 +121,7 @@ margin-top:50px;
 <a class="btn" href="https://wa.me/4917683181352">WhatsApp Kontakt</a>
 </section>
 
-<section id="services">
+<section id="services" class="container">
 <h2>UNSERE LEISTUNGEN</h2>
 <div class="grid">
 <div class="card">Wohnungsreinigung</div>
@@ -126,7 +133,7 @@ margin-top:50px;
 </div>
 </section>
 
-<section id="prices">
+<section id="prices" class="container">
 <h2>PREISE</h2>
 <div class="grid">
 <div class="card">Wohnung: ab 80 €</div>
@@ -138,7 +145,7 @@ margin-top:50px;
 </div>
 </section>
 
-<section id="reviews">
+<section id="reviews" class="container">
 <h2>KUNDENBEWERTUNGEN</h2>
 <div class="grid">
 
@@ -238,3 +245,4 @@ window.open(`https://wa.me/4917683181352?text=Buchung Preis: ${price.toFixed(2)}
 
 </body>
 </html>
+update website design
